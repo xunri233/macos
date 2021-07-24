@@ -39,4 +39,27 @@ Use this for education purposes only.
 仅供参考学习
 
 ```
-## frpc 文件参考
+### frpc 文件参考
+
+```
+[common]
+server_addr = 远程外网ip
+server_port = 7000
+
+[ssh]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 22
+remote_port = 23 #通过23端口连接mac ssh
+
+[vnc]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 3283
+remote_port = 3283
+
+[vnc1]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 5900
+remote_port = 5900
