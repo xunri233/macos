@@ -20,25 +20,6 @@
 之后通过ssh工具或者vnc工具连接
 连接之后很奇怪？ 在会话中运行 `system_profiler SPHardwareDataType` 或使用 `pip3 install bpytop && bpytop`
 
-
-### 贡献者
-
-- [rokibhasansagar](https://github.com/rokibhasansagar) - Author
-- Team [Area69Lab](https://github.com/Area69Lab) for inspiring me into using macOS
-- [P3TERX's ssh2actions](https://github.com/P3TERX/ssh2actions) for SSH-ing into Actions
-- [xunri233](https://github.com/xunri233)
-
-### 声明
-
-```text
-Please do not use this repository for 24x7x365 operations on GitHub.
-请不要24小时不间断使用
-Your account might get flagged or banned if GitHub Authorities want to do so.
-这样做的话你的账户有可能会被标记或者封禁
-Use this for education purposes only.
-仅供参考学习
-
-```
 ### frpc 文件参考
 
 ```
@@ -63,3 +44,22 @@ type = tcp
 local_ip = 127.0.0.1
 local_port = 5900
 remote_port = 5900
+
+### 贡献者
+
+- [rokibhasansagar](https://github.com/rokibhasansagar) - Author
+- Team [Area69Lab](https://github.com/Area69Lab) for inspiring me into using macOS
+- [P3TERX's ssh2actions](https://github.com/P3TERX/ssh2actions) for SSH-ing into Actions
+- [xunri233](https://github.com/xunri233)
+
+### 声明
+
+```text
+Please do not use this repository for 24x7x365 operations on GitHub.
+请不要24小时不间断使用
+Your account might get flagged or banned if GitHub Authorities want to do so.
+这样做的话你的账户有可能会被标记或者封禁
+Use this for education purposes only.
+仅供参考学习
+
+```
