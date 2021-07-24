@@ -1,0 +1,38 @@
+name: macos
+
+on:
+  workflow_dispatch:
+
+jobs:
+  mac:
+    runs-on: macos-10.15
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: vnc start
+      run: sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -off -restart -agent -privs -all -allowAccessFor -allUsers
+    - name: SSH keepalive
+      run: |
+        mkdir -p ~/.ssh
+        cat << EOF > ~/.ssh/config
+        Host *
+            ServerAliveInterval 60
+            StrictHostKeyChecking no
+        Host github.com
+            User git
+            Port 22
+            Hostname github.com
+            TCPKeepAlive yes
+            IdentitiesOnly yes
+        EOF
+    - name: start SSH
+      uses: xunri233/ssh2actions@main
+      with:
+        mode: frpc
+      env:
+        # type your frpc config download url
+        FRPC_CONFIG_URL: ${{ secrets.FRPC_CONFIG_URL }}
+        # This password you will use when authorizing via SSH and VNC
+        SYS_PASSWORD: ${{ secrets.SYS_PASSWORD }}
+        SYS_USER: ${{ secrets.SYS_USER }}
