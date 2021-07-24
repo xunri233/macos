@@ -2,7 +2,7 @@
 
 通过github actions来运行macos
 
-## _步骤_
+## 步骤
 
 1. Fork下来这个项目
 2. 在仓库的设置Secrets的分别添加`FRPC_CONFIG_URL`,`SYS_USER`,`SYS_PASSWORD`
@@ -11,24 +11,24 @@
    > `SYS_PASSWORD`填写你想使用的密码
 3. 点击仓库Actions, 选择workflow名字, 然后通过 `workflow_dispatch` 来启动
 
-### _完成了！_
+### 完成了！
 
 > 账号和密码为你在变量设置的账号和密码，使用 `su - runner` 方可使用普通用户的身份进行
 
-### _最后_
+### 最后
 
 之后通过ssh工具或者vnc工具连接
 连接之后很奇怪？ 在会话中运行 `system_profiler SPHardwareDataType` 或使用 `pip3 install bpytop && bpytop`
 
 
-### _Credits_
+### 贡献者
 
 - [rokibhasansagar](https://github.com/rokibhasansagar) - Author
 - Team [Area69Lab](https://github.com/Area69Lab) for inspiring me into using macOS
 - [P3TERX's ssh2actions](https://github.com/P3TERX/ssh2actions) for SSH-ing into Actions
 - [xunri233](https://github.com/xunri233)
 
-### _声明_
+### 声明
 
 ```text
 Please do not use this repository for 24x7x365 operations on GitHub.
@@ -39,3 +39,4 @@ Use this for education purposes only.
 仅供参考学习
 
 ```
+## frpc 文件参考
