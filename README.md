@@ -18,7 +18,7 @@
 ### 最后
 
 之后通过ssh工具或者vnc工具连接
-连接之后很奇怪？ 在会话中运行 `system_profiler SPHardwareDataType` 或使用 `pip3 install bpytop && bpytop`
+> 连接之后很奇怪？ 在会话中运行 `system_profiler SPHardwareDataType` 或使用 `pip3 install bpytop && bpytop`
 
 ### frpc 文件参考
 
