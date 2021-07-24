@@ -5,9 +5,9 @@
 ## 步骤
 
 1. Fork下来这个项目
-2. 在仓库的设置Secrets的分别添加`FRPC_CONFIG_URL`,`SYS_USER`,`SYS_PASSWORD`
+2. 在仓库设置里找到Secrets选项分别添加`FRPC_CONFIG_URL`,`SYS_USER`,`SYS_PASSWORD`
    > `FRPC_CONFIG_URL`填写你的frpc配置文件下载连接
-   > `SYS_USER`填写你想使用的用户名
+   > `SYS_USER`填写你想使用的用户名(推荐使用root账户)
    > `SYS_PASSWORD`填写你想使用的密码
 3. 点击仓库Actions, 选择workflow名字, 然后通过 `workflow_dispatch` 来启动
 
