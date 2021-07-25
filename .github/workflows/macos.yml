@@ -5,7 +5,7 @@ on:
 
 jobs:
   mac:
-    runs-on: macos-10.15
+    runs-on: macos-latest
 
     steps:
     - name: Checkout
@@ -26,7 +26,7 @@ jobs:
             TCPKeepAlive yes
             IdentitiesOnly yes
         EOF
-    - name: start SSH
+    - name: start SSH and mapping
       uses: xunri233/ssh2actions@main
       with:
         mode: frpc
